@@ -21,3 +21,6 @@
 % 🔗 arXiv
 
 %____________________________________________________________________________________________________________________________________%
+
+The source code implements a subsampled SVM model with an RBF kernel. Users can further enhance the model's sparsity and performance by applying a linearly programmed SVM (LPSVM) approach. Additionally, the SVBM model can be combined with optimization algorithms to achieve better results.
+The open-source code is available at: https://github.com/junbolian/SVBM.
