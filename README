@@ -12,43 +12,48 @@
 
 ## Introduction
 
-Welcome to the Support Vector Boosting Machine (SVBM) repository! This repository contains the source code for the SVBM model, a machine learning framework that combines AdaBoost principles and residual connections to enhance the performance of traditional Support Vector Machines (SVMs). Detailed documentation and examples are provided to help users effectively apply the SVBM model in their projects.
+Welcome to the **Support Vector Boosting Machine (SVBM)** repository! This repository hosts the source code for the SVBM model—a machine learning framework that synergizes the AdaBoost algorithm and residual connections to elevate the performance of standard Support Vector Machines (SVMs). The provided documentation and examples will guide you through effectively applying SVBM to your projects.
 
 ## Overview
 
-The SVBM model is detailed in the paper titled *"Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections"* by Junbo Lian. The model uses an RBF kernel and supports further enhancements such as linearly programmed SVM (LPSVM) for increased sparsity and performance. It can also be integrated with optimization algorithms to improve results.
+The SVBM model is discussed in the paper titled *"Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections"* by **Junbo Lian**. SVBM incorporates an RBF kernel by default and allows for additional enhancements like the **Linearly Programmed SVM (LPSVM)** for improved sparsity and performance. It can be seamlessly integrated with various optimization algorithms for further performance boosts.
 
 ### Key Features
-1. **Subsampled SVM with RBF Kernel**: Implements an SVM with an RBF kernel for robust classification.
-2. **Linearly Programmed SVM (LPSVM)**: Optional approach for improved sparsity and efficiency.
-3. **Integration with Optimization Algorithms**: Enhances performance through algorithmic optimizations.
-4. **Residual Connections**: Aids in improving model accuracy by mitigating overfitting.
-5. **Modular Design**: Easy to adapt and expand for different research and practical applications.
+- **Subsampled SVM with RBF Kernel**: Employs an SVM with an RBF kernel to achieve robust and adaptable classification.
+- **Linearly Programmed SVM (LPSVM)**: Optional implementation for increased efficiency and reduced model complexity.
+- **Optimization Algorithm Integration**: Can be paired with optimization algorithms to fine-tune model performance.
+- **Residual Connections**: Improves classification accuracy and mitigates the risk of overfitting.
+- **Modular and Flexible Design**: Easily extendable for research or practical application purposes.
 
-### Parameter Inputs:
-- `X`: Input data matrix.
-- `y`: Corresponding labels.
-- `kernel`: Type of kernel (e.g., 'RBF').
-- `parameters`: Customizable SVM parameters.
+### Parameters:
+- **`X`**: Input data matrix.
+- **`y`**: Labels corresponding to the input data.
+- **`kernel`**: Type of kernel function (e.g., `'RBF'`).
+- **`parameters`**: Customizable SVM parameters for model tuning.
 
-### Installation
-Clone the repository and ensure that all necessary dependencies are installed:
+## Installation
+
+Clone this repository and ensure all dependencies are properly installed:
+
 ```bash
 git clone https://github.com/junbolian/SVBM.git
 cd SVBM
 ```
 
-### Usage Example:
+## Usage Example
+
+Here's a simple usage example in MATLAB:
+
 ```matlab
-% Load your data into variables X and y
+% Load your dataset into variables X and y
 model = SVBM(X, y, 'RBF', parameters);
 [accuracy, predictions] = model.trainAndTest();
 ```
 
-## How to Cite
-If you find this repository helpful in your research, please cite the main paper:
+## Citation
 
-**Junbo Lian**  
+If this repository aids your research, please cite the associated paper:
+
+**Junbo Jacob Lian**  
 *"Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections"*  
 [DOI: 10.48550/arXiv.2410.06957](https://doi.org/10.48550/arXiv.2410.06957)
-
