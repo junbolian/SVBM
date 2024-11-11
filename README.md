@@ -1,52 +1,59 @@
-# IECO: Improved Educational Competition Optimizer
+# Support Vector Boosting Machine (SVBM) - Version 1.0
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/junbolian/IECO)
-![GitHub repo size](https://img.shields.io/github/repo-size/junbolian/IECO)
-![GitHub language count](https://img.shields.io/github/languages/count/junbolian/IECO)
-![GitHub last commit](https://img.shields.io/github/last-commit/junbolian/IECO)
-![GitHub issues](https://img.shields.io/github/issues/junbolian/IECO)
-![GitHub forks](https://img.shields.io/github/forks/junbolian/IECO)
-![GitHub stars](https://img.shields.io/github/stars/junbolian/IECO)
-![GitHub watchers](https://img.shields.io/github/watchers/junbolian/IECO)
-![GitHub contributors](https://img.shields.io/github/contributors/junbolian/IECO)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/junbolian/SVBM)
+![GitHub repo size](https://img.shields.io/github/repo-size/junbolian/SVBM)
+![GitHub language count](https://img.shields.io/github/languages/count/junbolian/SVBM)
+![GitHub last commit](https://img.shields.io/github/last-commit/junbolian/SVBM)
+![GitHub issues](https://img.shields.io/github/issues/junbolian/SVBM)
+![GitHub forks](https://img.shields.io/github/forks/junbolian/SVBM)
+![GitHub stars](https://img.shields.io/github/stars/junbolian/SVBM)
+![GitHub watchers](https://img.shields.io/github/watchers/junbolian/SVBM)
+![GitHub contributors](https://img.shields.io/github/contributors/junbolian/SVBM)
 
+## Introduction
 
-This repository provides the source code for the **Improved Educational Competition Optimizer (IECO)**, a novel optimization algorithm designed for advanced engineering optimization tasks.
+Welcome to the **Support Vector Boosting Machine (SVBM)** repository! This repository hosts the source code for the SVBM model—a machine learning framework that synergizes the AdaBoost algorithm and residual connections to elevate the performance of standard Support Vector Machines (SVMs). The provided documentation and examples will guide you through effectively applying SVBM to your projects.
 
 ## Overview
 
-The IECO source code includes two distinct sets of benchmark test functions:
-- **Standard Benchmark Functions**: Classical test functions commonly used for evaluating optimization algorithms.
-- **Shifted Benchmark Functions**: Classical functions that have been shifted to avoid the bias towards the origin, aiding in better generalization and preventing overfitting.
+The SVBM model is discussed in the paper titled *"Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections"* by **Junbo Lian**. SVBM incorporates an RBF kernel by default and allows for additional enhancements like the **Linearly Programmed SVM (LPSVM)** for improved sparsity and performance. It can be seamlessly integrated with various optimization algorithms for further performance boosts.
 
-The repository is structured into folders that can be executed directly using the provided `main` files for easy experimentation and testing.
+### Key Features
+- **Subsampled SVM with RBF Kernel**: Employs an SVM with an RBF kernel to achieve robust and adaptable classification.
+- **Linearly Programmed SVM (LPSVM)**: Optional implementation for increased efficiency and reduced model complexity.
+- **Optimization Algorithm Integration**: Can be paired with optimization algorithms to fine-tune model performance.
+- **Residual Connections**: Improves classification accuracy and mitigates the risk of overfitting.
+- **Modular and Flexible Design**: Easily extendable for research or practical application purposes.
 
-## Features
+### Parameters:
+- **`X`**: Input data matrix.
+- **`y`**: Labels corresponding to the input data.
+- **`kernel`**: Type of kernel function (e.g., `'RBF'`).
+- **`parameters`**: Customizable SVM parameters for model tuning.
 
-- **Early Stopping Mechanism**: The improved version of IECO incorporates an early stopping feature implemented through two `m` files, enhancing the algorithm's efficiency and robustness.
-- **User-Friendly Implementation**: The code is designed for easy integration and use in your own optimization experiments.
+## Installation
 
-## How to Use
+Clone this repository and ensure all dependencies are properly installed:
 
-1. Clone the repository.
-2. Navigate to the desired test function set.
-3. Run the `main` file to start the optimization process.
+```bash
+git clone https://github.com/junbolian/SVBM.git
+cd SVBM
+```
 
-Detailed documentation for running and modifying the code is provided within the comments of each file. For an in-depth explanation of the algorithm and its implementation, please refer to the upcoming publication.
+## Usage Example
+
+Here's a simple usage example in MATLAB:
+
+```matlab
+% Load your dataset into variables X and y
+model = SVBM(X, y, 'RBF', parameters);
+[accuracy, predictions] = model.trainAndTest();
+```
 
 ## Citation
 
-For academic use, please cite our forthcoming paper:
+If this repository aids your research, please cite the associated paper:
 
-**IECO: An Improved Educational Competition Optimizer for State-of-the-Art Engineering Optimization**  
-Authors: Xiaojie Tang#, Junbo Lian#, Ling Ma, Xincan Wu, Rui Zhong, Yujun Zhang, Huiling Chen  
-- *School of Mechanical Engineering, Sichuan University Jinjiang College, Meishan 620680, PR China*  
-- *School of Mathematics and Computer Sciences, Zhejiang A & F University, Hangzhou 311300, PR China*  
-- *Graduate School of Information Science and Technology, Hokkaido University, Sapporo, Japan*  
-- *School of New Energy, Jingchu University of Technology, Jingmen, 448000, PR China*  
-- *School of Computer Science and Artificial Intelligence, Wenzhou University, Wenzhou 325035, PR China*  
-
-#These authors contributed equally to this work.  
-**Corresponding authors**: Junbo Lian (junbolian@qq.com), Huiling Chen (chenhuiling.jlu@gmail.com)
-
-Stay tuned for more updates and the publication of the full paper for further insights into the theoretical background and experimental results.
+**Junbo Jacob Lian**  
+*"Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections"*  
+[DOI: 10.48550/arXiv.2410.06957](https://doi.org/10.48550/arXiv.2410.06957)
