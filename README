@@ -1,27 +1,35 @@
-%______________________________________________________________________________________________________________________________________%
 
-% 📜 Support Vector Boosting Machine (SVBM) source codes (version 1.0)
+# 📜 Support Vector Boosting Machine (SVBM) - Version 1.0
 
-% 🌐 Website and codes of SVBM: https://github.com/junbolian/SVBM
+Welcome to the official repository for the **Support Vector Boosting Machine (SVBM)**. This project aims to enhance classification performance through an innovative combination of AdaBoost and residual connections, utilizing a subsampled SVM model with an RBF kernel.
 
-% 📅 Last update: Oct 09 2024
+## 🌐 Resources
+- **Project Website & Code Repository**: [SVBM on GitHub](https://github.com/junbolian/SVBM)
+- **Contact**: For any questions or collaboration inquiries, reach out to Junbo Lian at [junbolian@qq.com](mailto:junbolian@qq.com)
 
-% 📧 E-Mail: junbolian@qq.com
-  
-%-------------------------------------------------------------------------------------------------------------------------------------%
+## 📅 Latest Update
+- **Last updated**: October 9, 2024
 
-% 👥 Corresponding Author: Junbo Lian (junbolian@qq.com)
+## 👥 Author
+- **Corresponding Author**: Junbo Lian ([junbolian@qq.com](mailto:junbolian@qq.com))
 
-%-------------------------------------------------------------------------------------------------------------------------------------%
+## ✨ Features
+- Implements a subsampled SVM model using an RBF kernel.
+- Integrates with linearly programmed SVM (LPSVM) for enhanced sparsity and performance.
+- Supports combinations with various optimization algorithms to achieve improved outcomes.
 
-% ✍️ After use of code, please users cite to the main paper on SVBM:
+## 📄 Citation
+If you use this code in your research, please cite the following paper:
 
-% 👥 Junbo Lian*
-% 📜 Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections
-% 🔗 https://doi.org/10.48550/arXiv.2410.06957
+**Junbo Lian**  
+**Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections**  
+[Read the full paper](https://doi.org/10.48550/arXiv.2410.06957)
 
-%____________________________________________________________________________________________________________________________________%
-
-The source code implements a subsampled SVM model with an RBF kernel. 
-Users can further enhance the model's sparsity and performance by applying a linearly programmed SVM (LPSVM) approach. 
-Additionally, the SVBM model can be combined with optimization algorithms to achieve better results.
+```bibtex
+@article{lian2024svbm,
+  author = {Junbo Lian},
+  title = {Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections},
+  journal = {arXiv preprint arXiv:2410.06957},
+  year = {2024},
+}
+```
