@@ -1,19 +1,54 @@
 # Support Vector Boosting Machine (SVBM) - Version 1.0
 
-Welcome to the official repository for the Support Vector Boosting Machine (SVBM). This repository provides the source code and resources necessary for implementing and experimenting with the SVBM model.
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/junbolian/SVBM)
+![GitHub repo size](https://img.shields.io/github/repo-size/junbolian/SVBM)
+![GitHub language count](https://img.shields.io/github/languages/count/junbolian/SVBM)
+![GitHub last commit](https://img.shields.io/github/last-commit/junbolian/SVBM)
+![GitHub issues](https://img.shields.io/github/issues/junbolian/SVBM)
+![GitHub forks](https://img.shields.io/github/forks/junbolian/SVBM)
+![GitHub stars](https://img.shields.io/github/stars/junbolian/SVBM)
+![GitHub watchers](https://img.shields.io/github/watchers/junbolian/SVBM)
+![GitHub contributors](https://img.shields.io/github/contributors/junbolian/SVBM)
 
-**Project Page and Source Code**: [SVBM GitHub Repository](https://github.com/junbolian/SVBM)  
-**Last Updated**: October 9, 2024  
-**Contact**: Junbo Lian (junbolian@qq.com)
+## Introduction
+
+Welcome to the Support Vector Boosting Machine (SVBM) repository! This repository contains the source code for the SVBM model, a machine learning framework that combines AdaBoost principles and residual connections to enhance the performance of traditional Support Vector Machines (SVMs). Detailed documentation and examples are provided to help users effectively apply the SVBM model in their projects.
 
 ## Overview
-The Support Vector Boosting Machine (SVBM) is a machine learning framework designed to enhance classification performance by integrating principles from AdaBoost and residual connections. This hybrid approach strengthens the classification capabilities of traditional Support Vector Machines (SVMs).
 
-The provided source code implements a subsampled SVM model with an RBF kernel as the base classifier. For users looking to further improve the model's sparsity and overall performance, the linearly programmed SVM (LPSVM) approach is recommended. The SVBM can also be combined with various optimization algorithms for further enhancements.
+The SVBM model is detailed in the paper titled *"Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections"* by Junbo Lian. The model uses an RBF kernel and supports further enhancements such as linearly programmed SVM (LPSVM) for increased sparsity and performance. It can also be integrated with optimization algorithms to improve results.
+
+### Key Features
+1. **Subsampled SVM with RBF Kernel**: Implements an SVM with an RBF kernel for robust classification.
+2. **Linearly Programmed SVM (LPSVM)**: Optional approach for improved sparsity and efficiency.
+3. **Integration with Optimization Algorithms**: Enhances performance through algorithmic optimizations.
+4. **Residual Connections**: Aids in improving model accuracy by mitigating overfitting.
+5. **Modular Design**: Easy to adapt and expand for different research and practical applications.
+
+### Parameter Inputs:
+- `X`: Input data matrix.
+- `y`: Corresponding labels.
+- `kernel`: Type of kernel (e.g., 'RBF').
+- `parameters`: Customizable SVM parameters.
+
+### Installation
+Clone the repository and ensure that all necessary dependencies are installed:
+```bash
+git clone https://github.com/junbolian/SVBM.git
+cd SVBM
+```
+
+### Usage Example:
+```matlab
+% Load your data into variables X and y
+model = SVBM(X, y, 'RBF', parameters);
+[accuracy, predictions] = model.trainAndTest();
+```
 
 ## How to Cite
-If you use this code in your research or project, please cite the following paper:
+If you find this repository helpful in your research, please cite the main paper:
 
-Junbo Lian  
-*Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections*  
+**Junbo Lian**  
+*"Support Vector Boosting Machine (SVBM): Enhancing Classification Performance with AdaBoost and Residual Connections"*  
 [DOI: 10.48550/arXiv.2410.06957](https://doi.org/10.48550/arXiv.2410.06957)
+
