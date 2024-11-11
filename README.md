@@ -25,12 +25,6 @@ The SVBM model is discussed in the paper titled *"Support Vector Boosting Machin
 - **Residual Connections**: Improves classification accuracy and mitigates the risk of overfitting.
 - **Modular and Flexible Design**: Easily extendable for research or practical application purposes.
 
-### Parameters:
-- **`X`**: Input data matrix.
-- **`y`**: Labels corresponding to the input data.
-- **`kernel`**: Type of kernel function (e.g., `'RBF'`).
-- **`parameters`**: Customizable SVM parameters for model tuning.
-
 ## Installation
 
 Clone this repository and ensure all dependencies are properly installed:
@@ -38,16 +32,6 @@ Clone this repository and ensure all dependencies are properly installed:
 ```bash
 git clone https://github.com/junbolian/SVBM.git
 cd SVBM
-```
-
-## Usage Example
-
-Here's a simple usage example in MATLAB:
-
-```matlab
-% Load your dataset into variables X and y
-model = SVBM(X, y, 'RBF', parameters);
-[accuracy, predictions] = model.trainAndTest();
 ```
 
 ## Citation
